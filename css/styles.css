@@ -11027,3 +11027,338 @@ p {
 .address strong {
   font-size: 1.2rem;
 }
+
+/* Flex y manejo de imágenes */
+.mosaico{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.imgpeque {
+display: flex;
+justify-content: space-evenly;
+width: 100%;
+flex-direction: column;
+}
+
+.imggrande {
+width: 550px;
+height: 300px;
+display: flex;
+}
+
+.imagen-pequena{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    margin-top: 5px;
+}
+
+/* Colores de fuente y fondo */
+.colorEmp{
+    background-color: #FFF5E1;
+}
+
+.colorAcen1{
+    color: #FFC0CB;
+}
+
+.colorAcen2{
+    color: #8B4513
+}
+
+.colortextpr{
+    color: #5D4037
+}
+
+.colortextse{
+    color: #B0BEC5
+}
+
+/* Fuentes (Lato es principal, Pacifico para encabezados) */
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.padHist{
+    padding-left: 270px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Carousel */
+
+.borde_carousel{
+  -webkit-text-stroke: 1px beige;
+  color:#782413;
+}
+
+.comprar_ahora{
+  -webkit-text-stroke: 1px white;
+  color:white;
+}
+
+.carrusel{
+  color:aqua;
+}
+
+/* Formulario */
+.formulario{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.form-Container{
+  width: 100%;
+  height: 100vh;
+  background-color: #FFC43F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-Content{
+  height: 920px;
+  width: 100%;
+  max-width: 500px;
+  background-color: #FFC0CB;
+  padding: 50px 60px 70px;
+  text-align: center;
+  border-radius: 25px;
+  color:white;
+}
+
+.form-Content h1{
+  font-size: 30px;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.form-Content h1::after{
+  content: '';
+  width: 30px;
+  height: 4px;
+  border-radius: 3px;
+  background: #5D4037;
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.input-field{
+  background-color:#787878;
+  margin: 15px 0;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  transition: max-height 0.5s;
+  overflow: hidden;
+}
+
+input {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  outline: none;
+  padding: 18px 15px;
+  color:white
+}
+
+input::placeholder{
+  color: white;
+}
+
+.input-field i{
+  margin-left: 15px;
+  color: #FFC0CB;
+}
+
+form p{
+  color:#333;
+  text-align: left;
+  font-size: 14px;
+}
+
+form p a{
+  margin-left: 5px;
+}
+
+.btn-field{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-field button{
+  flex-basis: 45%;
+  font-size: 16px;
+  background-color:beige;
+  color: #000;
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 1s;
+}
+
+.input-group{
+  height: 250px;
+}
+
+.btn-field button.disable {
+  background-color: yellow;
+}
+
+/* Display de página de torta */
+.producto-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+  max-width: 900px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background-color: #fff8f8;
+}
+.producto-container img {
+  width: 300px;
+  height: auto;
+  border-radius: 15px;
+  margin-right: 30px;
+}
+.producto-info {
+  max-width: 500px;
+}
+.producto-info h2 {
+  font-size: 28px;
+  color: #a1122c;
+  margin-bottom: 10px;
+}
+.producto-info p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+}
+.producto-info .precio {
+  margin-top: 15px;
+  font-size: 20px;
+  color: #222;
+  font-weight: bold;
+}
+.btn-comprar {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #a1122c;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+}
+.btn-comprar:hover {
+  background-color: #7e0d20;
+}
+
+/* Colaboraciones*/
+.texto_promo{
+  background-color: beige;
+  color: black;
+  -webkit-text-stroke: 2px #7e0d20;
+  padding: -10px -10px;
+}
+
+.bg_promo{
+  background-color: beige;
+}
+
+.titulo_promo{
+  -webkit-text-stroke: 1px black;
+}
+
+
+
+/* Historia*/
+
+.historia-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+  max-width: 1250px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background-color: #fff8f8;
+}
+
+.historia-contenido{
+  width: 100%;
+  max-width: 450px;
+  background-color: #FFC0CB;
+  padding: 50px 60px 70px;
+  text-align: center;
+  border-radius: 25px;
+  color:white;
+}
+
+/* Campaña de registro en Index*/
+.registrate-aqui{
+  font-size: 28px;
+}
+
+.flex{
+  display: flex;
+}
+
+/* Frente de pagina */
+
+/* Garantias */
+.centralizar{
+  align-items: center;
+  justify-content: center;
+}
+
+.fondo-g{
+  background-color: beige;
+  border-radius: 3px;
+}
+
+.fondo-frase{
+  background-color:#ecc9af;
+  border-radius: 3px;
+}
+
+.pad-garantias{
+  width: 75px;
+  padding: 5px;
+}
+
+/* Footer */
+
+.pad-footer{
+  display: flex;
+  margin: 40px auto;
+  padding: 5px;
+  width: 300px;
+  height: auto;
+  margin-right: 30px;
+}
