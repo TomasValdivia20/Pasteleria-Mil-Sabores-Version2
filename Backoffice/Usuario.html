@@ -93,123 +93,54 @@
                     <div class="container-fluid px-4">
                         <h1 class="mt-4">Usuario</h1>
                         <ol class="breadcrumb mb-4">
-                            <li class="breadcrumb-item active">Gestión de Usuario</li>
+                            <li class="breadcrumb-item active">Gestión de Usuarios</li>
                         </ol>
                         
-                    
-                        <div class="card mb-4">
-                            <div class="card-header">
-                                <i class="fas fa-table me-1"></i>
-                                Tabla de ventas
-                            </div>
-                            <div class="card-body">
-                                <table id="datatablesSimple">
+                        <!-- Contenido de usuarioo-->
+                         <div class="card text-start">
+                        <div class="card-body">
+                            <div class="table-responsive small">
+                                <table class="table table-striped table-sm">
                                     <thead>
                                         <tr>
-                                            <th>Nombre</th>
-                                            <th>Dirección</th>
-                                            <th>Region</th>
-                                            <th>Edad</th>
-                                            <th>Fecha de compra</th>
-                                            <th>Total de compra</th>
+                                            <th scope="col">ID</th>
+                                            <th scope="col">Nombre Completo</th>
+                                            <th scope="col">Correo Electrónico</th>
+                                            <th scope="col">Teléfono</th>
+                                            <th scope="col">Tipo</th>
                                         </tr>
                                     </thead>
-                                    <tfoot>
+                                    <tbody id="userTableBody">
+                                        <!-- Usuario estático en HTML -->
                                         <tr>
-                                            <th>Nombre</th>
-                                            <th>Dirección</th>
-                                            <th>Region</th>
-                                            <th>Edad</th>
-                                            <th>Fecha de Compra</th>
-                                            <th>Total de Compra</th>
-                                        </tr>
-                                    </tfoot>
-                                    <tbody>
-                                        <tr>
-                                            <td>Sebastian Carrasco</td>
-                                            <td>Recoleta 140</td>
-                                            <td>Metropolitana</td>
-                                            <td>61</td>
-                                            <td>2025/04/25</td>
-                                            <td>$16,800</td>
+                                            <th scope="row">1</th>
+                                            <td><a href="/admin/usuario/3312" id="userLink10000">Amadeus</a></td>
+                                            <td>amadeusbigboss@gmail.com</td>
+                                            <td>+56911111111</td>
+                                            <td><h6><span class="badge bg-primary">ADMINISTRADOR</span></h6></td>
                                         </tr>
                                         <tr>
-                                            <td>Javier Cornejo</td>
-                                            <td>Bernando o' Higgins 2</td>
-                                            <td>Magallanes</td>
-                                            <td>63</td>
-                                            <td>2025/07/25</td>
-                                            <td>$170,750</td>
+                                            <th scope="row">2</th>
+                                            <td><a href="/admin/usuario/3312" id="userLink10000">Ludovico</a></td>
+                                            <td>gordoludovico@outlook.com</td>
+                                            <td>+56922222222</td>
+                                            <td><h6><span class="badge bg-success">VENDEDOR</span></h6></td>
                                         </tr>
                                         <tr>
-                                            <td>Ricardo Piscina</td>
-                                            <td>Peru 12</td>
-                                            <td>Arica</td>
-                                            <td>66</td>
-                                            <td>2025/01/12</td>
-                                            <td>$86,000</td>
+                                            <th scope="row">3</th>
+                                            <td><a href="/admin/usuario/3312" id="userLink10000">Agatha</a></td>
+                                            <td>agatha12@hotmail.com</td>
+                                            <td>+56933333333</td>
+                                            <td><h6><span class="badge bg-warning">CLIENTE</span></h6></td>
                                         </tr>
-                                        <tr>
-                                            <td>Alfonso Sandoval</td>
-                                            <td>Valparaiso 12</td>
-                                            <td>Valparaiso</td>
-                                            <td>22</td>
-                                            <td>2025/03/29</td>
-                                            <td>$433,060</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Kike Morandé</td>
-                                            <td>Viña del Mar 67</td>
-                                            <td>Valparaiso</td>
-                                            <td>33</td>
-                                            <td>2025/11/28</td>
-                                            <td>$162,700</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Willy Sabor</td>
-                                            <td>Monjitas 54</td>
-                                            <td>Metropolitana</td>
-                                            <td>61</td>
-                                            <td>2025/12/02</td>
-                                            <td>$372,000</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Anita Alvarado</td>
-                                            <td>Jorge Pratt 76</td>
-                                            <td>Metropolitana</td>
-                                            <td>59</td>
-                                            <td>2025/08/06</td>
-                                            <td>$137,500</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Pancho Delsur</td>
-                                            <td>Bombero Nuñez 34</td>
-                                            <td>Metropolitana</td>
-                                            <td>55</td>
-                                            <td>2025/10/14</td>
-                                            <td>$327,900</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Pedro Pascal</td>
-                                            <td>Monjitas 52</td>
-                                            <td>Metropolitana</td>
-                                            <td>39</td>
-                                            <td>2025/09/15</td>
-                                            <td>$205,500</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Sergio Lagos</td>
-                                            <td>La Moneda 3</td>
-                                            <td>Metropolitana</td>
-                                            <td>23</td>
-                                            <td>2025/12/13</td>
-                                            <td>$103,600</td>
-                                        </tr>
-                                        
                                     </tbody>
                                 </table>
                             </div>
                         </div>
+                    </div>
+                    
+                        
+
                     </div>
                 </main>
                 <footer class="py-4 bg-light mt-auto">

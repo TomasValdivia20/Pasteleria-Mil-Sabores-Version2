@@ -96,120 +96,30 @@
                             <li class="breadcrumb-item active">Gestión de Reportes</li>
                         </ol>
                         
-                    
-                        <div class="card mb-4">
-                            <div class="card-header">
-                                <i class="fas fa-table me-1"></i>
-                                Tabla de ventas
+                    <!-- Contenido de reportes-->
+
+                    <div class="row">
+                            <div class="col-xl-6">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <i class="fas fa-chart-area me-1"></i>
+                                        Ventas en los ultimos 15 días
+                                    </div>
+                                    <div class="card-body"><canvas id="myAreaChart" width="100%" height="40"></canvas></div>
+                                </div>
                             </div>
-                            <div class="card-body">
-                                <table id="datatablesSimple">
-                                    <thead>
-                                        <tr>
-                                            <th>Nombre</th>
-                                            <th>Dirección</th>
-                                            <th>Region</th>
-                                            <th>Edad</th>
-                                            <th>Fecha de compra</th>
-                                            <th>Total de compra</th>
-                                        </tr>
-                                    </thead>
-                                    <tfoot>
-                                        <tr>
-                                            <th>Nombre</th>
-                                            <th>Dirección</th>
-                                            <th>Region</th>
-                                            <th>Edad</th>
-                                            <th>Fecha de Compra</th>
-                                            <th>Total de Compra</th>
-                                        </tr>
-                                    </tfoot>
-                                    <tbody>
-                                        <tr>
-                                            <td>Sebastian Carrasco</td>
-                                            <td>Recoleta 140</td>
-                                            <td>Metropolitana</td>
-                                            <td>61</td>
-                                            <td>2025/04/25</td>
-                                            <td>$16,800</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Javier Cornejo</td>
-                                            <td>Bernando o' Higgins 2</td>
-                                            <td>Magallanes</td>
-                                            <td>63</td>
-                                            <td>2025/07/25</td>
-                                            <td>$170,750</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Ricardo Piscina</td>
-                                            <td>Peru 12</td>
-                                            <td>Arica</td>
-                                            <td>66</td>
-                                            <td>2025/01/12</td>
-                                            <td>$86,000</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Alfonso Sandoval</td>
-                                            <td>Valparaiso 12</td>
-                                            <td>Valparaiso</td>
-                                            <td>22</td>
-                                            <td>2025/03/29</td>
-                                            <td>$433,060</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Kike Morandé</td>
-                                            <td>Viña del Mar 67</td>
-                                            <td>Valparaiso</td>
-                                            <td>33</td>
-                                            <td>2025/11/28</td>
-                                            <td>$162,700</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Willy Sabor</td>
-                                            <td>Monjitas 54</td>
-                                            <td>Metropolitana</td>
-                                            <td>61</td>
-                                            <td>2025/12/02</td>
-                                            <td>$372,000</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Anita Alvarado</td>
-                                            <td>Jorge Pratt 76</td>
-                                            <td>Metropolitana</td>
-                                            <td>59</td>
-                                            <td>2025/08/06</td>
-                                            <td>$137,500</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Pancho Delsur</td>
-                                            <td>Bombero Nuñez 34</td>
-                                            <td>Metropolitana</td>
-                                            <td>55</td>
-                                            <td>2025/10/14</td>
-                                            <td>$327,900</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Pedro Pascal</td>
-                                            <td>Monjitas 52</td>
-                                            <td>Metropolitana</td>
-                                            <td>39</td>
-                                            <td>2025/09/15</td>
-                                            <td>$205,500</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Sergio Lagos</td>
-                                            <td>La Moneda 3</td>
-                                            <td>Metropolitana</td>
-                                            <td>23</td>
-                                            <td>2025/12/13</td>
-                                            <td>$103,600</td>
-                                        </tr>
-                                        
-                                    </tbody>
-                                </table>
+                            <div class="col-xl-6">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <i class="fas fa-chart-bar me-1"></i>
+                                        Ventas primer semestre
+                                    </div>
+                                    <div class="card-body"><canvas id="myBarChart" width="100%" height="40"></canvas></div>
+                                </div>
                             </div>
                         </div>
+
+                        
                     </div>
                 </main>
                 <footer class="py-4 bg-light mt-auto">
@@ -231,5 +141,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
         <script src="js/datatables-simple-demo.js"></script>
+        <script src="assets/demo/chart-area-demo.js"></script>
+        <script src="assets/demo/chart-bar-demo.js"></script>
     </body>
 </html>

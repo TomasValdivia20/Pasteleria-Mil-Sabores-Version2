@@ -96,121 +96,106 @@
                             <li class="breadcrumb-item active">Gestión de Categorías</li>
                         </ol>
                         
-                    
-                        <div class="card mb-4">
-                            <div class="card-header">
-                                <i class="fas fa-table me-1"></i>
-                                Tabla de ventas
-                            </div>
-                            <div class="card-body">
-                                <table id="datatablesSimple">
+                        <!-- Listado de Categorias-->
+                        <div class="card text-start">
+                        <div class="card-body">
+                            <div class="table-responsive small">
+                                <table class="table table-striped table-sm table-hover">
                                     <thead>
                                         <tr>
-                                            <th>Nombre</th>
-                                            <th>Dirección</th>
-                                            <th>Region</th>
-                                            <th>Edad</th>
-                                            <th>Fecha de compra</th>
-                                            <th>Total de compra</th>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Categoría</th>
+                                            <th scope="col">Descripción</th>
+                                            <th scope="col">Cantidad de Productos</th>
                                         </tr>
                                     </thead>
-                                    <tfoot>
-                                        <tr>
-                                            <th>Nombre</th>
-                                            <th>Dirección</th>
-                                            <th>Region</th>
-                                            <th>Edad</th>
-                                            <th>Fecha de Compra</th>
-                                            <th>Total de Compra</th>
-                                        </tr>
-                                    </tfoot>
                                     <tbody>
                                         <tr>
-                                            <td>Sebastian Carrasco</td>
-                                            <td>Recoleta 140</td>
-                                            <td>Metropolitana</td>
-                                            <td>61</td>
-                                            <td>2025/04/25</td>
-                                            <td>$16,800</td>
+                                            <th scope="row">1</th>
+                                            <td><a href="/admin/categoria/2000/index.html">Tortas Cuadradas</a></td>
+                                            <td>Tortas de forma redonda</td>
+                                            <td>150</td>
                                         </tr>
                                         <tr>
-                                            <td>Javier Cornejo</td>
-                                            <td>Bernando o' Higgins 2</td>
-                                            <td>Magallanes</td>
-                                            <td>63</td>
-                                            <td>2025/07/25</td>
-                                            <td>$170,750</td>
+                                            <th scope="row">2</th>
+                                            <td><a href="/admin/categoria/2000/index.html">Tortas Circulares</a></td>
+                                            <td>Tortas de forma cuadrada</td>
+                                            <td>90</td>
                                         </tr>
                                         <tr>
-                                            <td>Ricardo Piscina</td>
-                                            <td>Peru 12</td>
-                                            <td>Arica</td>
-                                            <td>66</td>
-                                            <td>2025/01/12</td>
-                                            <td>$86,000</td>
+                                            <th scope="row">3</th>
+                                            <td><a href="/admin/categoria/2000">Postres Individuales</a></td>
+                                            <td>Postres que se preparan para porciones individuales</td>
+                                            <td>200</td>
                                         </tr>
                                         <tr>
-                                            <td>Alfonso Sandoval</td>
-                                            <td>Valparaiso 12</td>
-                                            <td>Valparaiso</td>
-                                            <td>22</td>
-                                            <td>2025/03/29</td>
-                                            <td>$433,060</td>
+                                            <th scope="row">4</th>
+                                            <td><a href="/admin/categoria/2000">Pasteleria Tradicional</a></td>
+                                            <td>Pasteleria chilena tradicional</td>
+                                            <td>200</td>
                                         </tr>
                                         <tr>
-                                            <td>Kike Morandé</td>
-                                            <td>Viña del Mar 67</td>
-                                            <td>Valparaiso</td>
-                                            <td>33</td>
-                                            <td>2025/11/28</td>
-                                            <td>$162,700</td>
+                                            <th scope="row">5</th>
+                                            <td><a href="/admin/categoria/2000">Productos Sin Azucar</a></td>
+                                            <td>Productos que no utilizan azucar en su preparacion</td>
+                                            <td>120</td>
                                         </tr>
                                         <tr>
-                                            <td>Willy Sabor</td>
-                                            <td>Monjitas 54</td>
-                                            <td>Metropolitana</td>
-                                            <td>61</td>
-                                            <td>2025/12/02</td>
-                                            <td>$372,000</td>
+                                            <th scope="row">6</th>
+                                            <td>Productos sin gluten</td>
+                                            <td>Productos que no contienen gluten</td>
+                                            <td>80</td>
                                         </tr>
                                         <tr>
-                                            <td>Anita Alvarado</td>
-                                            <td>Jorge Pratt 76</td>
-                                            <td>Metropolitana</td>
-                                            <td>59</td>
-                                            <td>2025/08/06</td>
-                                            <td>$137,500</td>
+                                            <th scope="row">7</th>
+                                            <td>Productos Veganos</td>
+                                            <td>Productos veganos</td>
+                                            <td>70</td>
                                         </tr>
                                         <tr>
-                                            <td>Pancho Delsur</td>
-                                            <td>Bombero Nuñez 34</td>
-                                            <td>Metropolitana</td>
-                                            <td>55</td>
-                                            <td>2025/10/14</td>
-                                            <td>$327,900</td>
+                                            <th scope="row">8</th>
+                                            <td>Productos Especiales</td>
+                                            <td>Productos especiales para situaciones especiales</td>
+                                            <td>60</td>
                                         </tr>
-                                        <tr>
-                                            <td>Pedro Pascal</td>
-                                            <td>Monjitas 52</td>
-                                            <td>Metropolitana</td>
-                                            <td>39</td>
-                                            <td>2025/09/15</td>
-                                            <td>$205,500</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Sergio Lagos</td>
-                                            <td>La Moneda 3</td>
-                                            <td>Metropolitana</td>
-                                            <td>23</td>
-                                            <td>2025/12/13</td>
-                                            <td>$103,600</td>
-                                        </tr>
-                                        
                                     </tbody>
                                 </table>
                             </div>
                         </div>
                     </div>
+                    
+                    <!-- Gestion de creacion de nueva categoria-->
+
+                    <br><br><br>
+                    <ol class="breadcrumb mb-4">
+                            <li class="breadcrumb-item active">Ingreso de nueva categoría</li>
+                        </ol>
+                    <div class="card-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="productName" class="form-label">Nombre del Categoria<small class="text-danger">*</small></label>
+                                    <input type="text" class="form-control" id="productName" placeholder="Ingrese el nombre del juego" required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="productDescription" class="form-label">Descripción<small class="text-danger">*</small></label>
+                                    <textarea class="form-control" id="productDescription" rows="3" placeholder="Ingrese una descripción del juego" required></textarea>
+                                </div>
+                                
+
+                                <div class="text-end">
+                                    <button type="submit" class="btn btn-primary" onclick="alert('Categoria creada exitosamente')">Guardar</button>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+
+                    
+                    </div>
+
+                </div>
+
                 </main>
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid px-4">

@@ -96,120 +96,174 @@
                             <li class="breadcrumb-item active">Gestión de Productos</li>
                         </ol>
                         
-                    
-                        <div class="card mb-4">
-                            <div class="card-header">
-                                <i class="fas fa-table me-1"></i>
-                                Tabla de ventas
-                            </div>
-                            <div class="card-body">
-                                <table id="datatablesSimple">
+                    <div class="card text-start">
+                        <div class="card-body">
+                            <div class="table-responsive small">
+                                <table class="table table-striped table-sm table-hover">
                                     <thead>
                                         <tr>
-                                            <th>Nombre</th>
-                                            <th>Dirección</th>
-                                            <th>Region</th>
-                                            <th>Edad</th>
-                                            <th>Fecha de compra</th>
-                                            <th>Total de compra</th>
+                                            <th scope="col">ID</th>
+                                            
+                                            <th scope="col">Producto</th>
+                                            <th scope="col">Categoría</th>
+                                            <th scope="col">Descripción</th>
+                                            <th scope="col">Precio</th>
+                                            <th scope="col">Disponibilidad</th>
                                         </tr>
                                     </thead>
-                                    <tfoot>
-                                        <tr>
-                                            <th>Nombre</th>
-                                            <th>Dirección</th>
-                                            <th>Region</th>
-                                            <th>Edad</th>
-                                            <th>Fecha de Compra</th>
-                                            <th>Total de Compra</th>
-                                        </tr>
-                                    </tfoot>
                                     <tbody>
                                         <tr>
-                                            <td>Sebastian Carrasco</td>
-                                            <td>Recoleta 140</td>
-                                            <td>Metropolitana</td>
-                                            <td>61</td>
-                                            <td>2025/04/25</td>
-                                            <td>$16,800</td>
+                                            <th scope="row">1</th>
+                                            
+                                            <td><a href="/admin/producto/1000">Torta Red Velvet</a></td>
+                                            <td>Tortas Cuadradas</td>
+                                            <td>Torta cuadrada de Red Velvet</td>
+                                            <td>$35.000 - $40.000</td>
+                                            <td>20/100</td>
                                         </tr>
                                         <tr>
-                                            <td>Javier Cornejo</td>
-                                            <td>Bernando o' Higgins 2</td>
-                                            <td>Magallanes</td>
-                                            <td>63</td>
-                                            <td>2025/07/25</td>
-                                            <td>$170,750</td>
+                                            <th scope="row">2</th>
+                                            
+                                            <td><a href="/admin/producto/1000">Torta "Cancha de futbol"</a></td>
+                                            <td>Tortas Cuadradas </td>
+                                            <td>Torta Cuadrada decorada como Cancha de futbol, rellena con crema y manjar</td>
+                                            <td>$35.000 - $40.000</td>
+                                            <td>20/100</td>
                                         </tr>
                                         <tr>
-                                            <td>Ricardo Piscina</td>
-                                            <td>Peru 12</td>
-                                            <td>Arica</td>
-                                            <td>66</td>
-                                            <td>2025/01/12</td>
-                                            <td>$86,000</td>
+                                            <th scope="row">3</th>
+                                            
+                                            <td><a href="/admin/producto/1000">Torta Nuez Manjar</a></td>
+                                            <td>Tortas Circulares</td>
+                                            <td>Torta circular de nuez con manjar</td>
+                                            <td>$35.000 - $60.000</td>
+                                            <td>20/100</td>
                                         </tr>
                                         <tr>
-                                            <td>Alfonso Sandoval</td>
-                                            <td>Valparaiso 12</td>
-                                            <td>Valparaiso</td>
-                                            <td>22</td>
-                                            <td>2025/03/29</td>
-                                            <td>$433,060</td>
+                                            <th scope="row">4</th>
+                                            
+                                            <td><a href="/admin/producto/1000">Torta panqueque naranja</a></td>
+                                            <td>Tortas Circulares</td>
+                                            <td>Torta circular de panqueques con naranja</td>
+                                            <td>$35.000 - $60.000</td>
+                                            <td>20/100</td>
                                         </tr>
                                         <tr>
-                                            <td>Kike Morandé</td>
-                                            <td>Viña del Mar 67</td>
-                                            <td>Valparaiso</td>
-                                            <td>33</td>
-                                            <td>2025/11/28</td>
-                                            <td>$162,700</td>
+                                            <th scope="row">5</th>
+                                            
+                                            <td><a href="/admin/producto/1000">Mousse de chocolate</a></td>
+                                            <td>Postres Individuales</td>
+                                            <td>Postre individual de Mousse sabor chocolate</td>
+                                            <td>$35.000 - $60.000</td>
+                                            <td>Agotado</td>
                                         </tr>
                                         <tr>
-                                            <td>Willy Sabor</td>
-                                            <td>Monjitas 54</td>
-                                            <td>Metropolitana</td>
-                                            <td>61</td>
-                                            <td>2025/12/02</td>
-                                            <td>$372,000</td>
+                                            <th scope="row">6</th>
+                                            
+                                            <td><a href="/admin/producto/1000">Mousse de Berries</a></td>
+                                            <td>Postres Individuales</td>
+                                            <td>Postre individual de Mousse sabor a Berries</td>
+                                            <td>$35.000 - $60.000</td>
+                                            <td>20/100</td>
                                         </tr>
                                         <tr>
-                                            <td>Anita Alvarado</td>
-                                            <td>Jorge Pratt 76</td>
-                                            <td>Metropolitana</td>
-                                            <td>59</td>
-                                            <td>2025/08/06</td>
-                                            <td>$137,500</td>
+                                            <th scope="row">7</th>
+                                            
+                                            <td><a href="/admin/producto/1000">Kuchen de nuez</a></td>
+                                            <td>Productos Sin Azucar</td>
+                                            <td>Producto sin azucar de Kuchen de nuez</td>
+                                            <td>$35.000 - $60.000</td>
+                                            <td>20/50</td>
                                         </tr>
                                         <tr>
-                                            <td>Pancho Delsur</td>
-                                            <td>Bombero Nuñez 34</td>
-                                            <td>Metropolitana</td>
-                                            <td>55</td>
-                                            <td>2025/10/14</td>
-                                            <td>$327,900</td>
+                                            <th scope="row">8</th>
+                                            
+                                            <td><a href="/admin/producto/1000">Kuchen de almendras</a></td>
+                                            <td>Productos Sin Azucar</td>
+                                            <td>Producto sin azucar de Kuchen de almendra</td>
+                                            <td>$35.000 - $60.000</td>
+                                            <td>20/50</td>
                                         </tr>
                                         <tr>
-                                            <td>Pedro Pascal</td>
-                                            <td>Monjitas 52</td>
-                                            <td>Metropolitana</td>
-                                            <td>39</td>
-                                            <td>2025/09/15</td>
-                                            <td>$205,500</td>
+                                            <th scope="row">9</th>
+                                            
+                                            <td><a href="/admin/producto/1000">Chilenitos (12 Unidades)</a></td>
+                                            <td>Pasteleria Tradicional</td>
+                                            <td>Pasteleria tradicional chilena de Chilenitos que se vende en decena.</td>
+                                            <td>$35.000 - $60.000</td>
+                                            <td>40/100</td>
                                         </tr>
                                         <tr>
-                                            <td>Sergio Lagos</td>
-                                            <td>La Moneda 3</td>
-                                            <td>Metropolitana</td>
-                                            <td>23</td>
-                                            <td>2025/12/13</td>
-                                            <td>$103,600</td>
+                                            <th scope="row">10</th>
+                                            
+                                            <td><a href="/admin/producto/1000">Cachitos (12 Unidades)</a></td>
+                                            <td>Pasteleria Tradicional</td>
+                                            <td>Pasteleria tradicional chilena de Cachitos que se vende en decena.</td>
+                                            <td>$35.000 - $60.000</td>
+                                            <td>20/100</td>
                                         </tr>
+                                        <tr>
+                                            <th scope="row">11</th>
+                                            
+                                            <td><a href="/admin/producto/1000">Rollitos de canela sin gluten (12 Unidades)</a></td>
+                                            <td>Productos sin gluten</td>
+                                            <td>Pasteleria sin gluten de Rollitos de canela que se vende en decena.</td>
+                                            <td>$35.000 - $60.000</td>
+                                            <td>18/20</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">12</th>
+                                            
+                                            <td><a href="/admin/producto/1000">Kuchen de Nuez Keto sin gluten</a></td>
+                                            <td>Productos sin Gluten</td>
+                                            <td>Pasteleria sin gluten de Kuchen keto de nuez</td>
+                                            <td>$35.000 - $60.000</td>
+                                            <td>Agotado</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">13</th>
+                                            
+                                            <td><a href="/admin/producto/1000">Brownie vegano</a></td>
+                                            <td>Productos Veganos</td>
+                                            <td>Unidad de Brownie vegano</td>
+                                            <td>$35.000 - $60.000</td>
+                                            <td>20/50</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">14</th>
+                                            
+                                            <td><a href="/admin/producto/1000">Torta vegana de frambuesa y chocolate</a></td>
+                                            <td>Productos Veganos</td>
+                                            <td>Torta vegana, que contieen frambuesa y chocolate vegano</td>
+                                            <td>$35.000 - $60.000</td>
+                                            <td>20/50</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">15</th>
+                                            
+                                            <td><a href="/admin/producto/1000">Torta de Bodas "Mil Sabores"</a></td>
+                                            <td>Productos Especiales</td>
+                                            <td>Torta de bodas especial</td>
+                                            <td>$35.000 - $60.000</td>
+                                            <td>2/10</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">16</th>
+                                            
+                                            <td><a href="/admin/producto/1000">Pan de Pascua</a></td>
+                                            <td>Productos Especiales</td>
+                                            <td>Producto de temporada especial</td>
+                                            <td>$35.000 - $60.000</td>
+                                            <td>2/10</td>
+                                        </tr>
+                                       
                                         
                                     </tbody>
                                 </table>
                             </div>
                         </div>
+                    </div>
+                        
                     </div>
                 </main>
                 <footer class="py-4 bg-light mt-auto">
