@@ -263,6 +263,67 @@
                             </div>
                         </div>
                     </div>
+
+                     <!-- Gestion de creacion de nuevo producto-->
+                      <br><br><br>
+                      <h4>Creación de nuevo producto</h4>
+                      <div class="card text-start">
+                        <div class="card-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="productName" class="form-label">ID<small class="text-danger">*</small></label>
+                                    <input type="text" class="form-control" id="productName" placeholder="Ingrese el nombre del juego" required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="productName" class="form-label">Nombre del Producto<small class="text-danger">*</small></label>
+                                    <input type="text" class="form-control" id="productName" placeholder="Ingrese el nombre del producto" required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="productDescription" class="form-label">Descripción<small class="text-danger">*</small></label>
+                                    <textarea class="form-control" id="productDescription" rows="3" placeholder="Ingrese una descripción del producto" required></textarea>
+                                </div>
+                                <div class="row">
+                                    <div class="mb-3 col-6 col-md-4">
+                                        <label for="productPrice" class="form-label">Precio<small class="text-danger">*</small></label>
+                                        <input type="number" class="form-control" id="productPrice" placeholder="Ingrese el precio del producto (En caso de tener rango, especificar)" required>
+                                    </div>
+
+                                    <div class="mb-3 col-6 col-md-4">
+                                        <label for="productPrice" class="form-label">Stock<small class="text-danger">*</small></label>
+                                        <input type="number" class="form-control" id="productPrice" placeholder="Cantidad disponible del producto" required>
+                                    </div>
+                                    <div class="mb-3 col-6 col-md-4">
+                                        <label for="productCategory" class="form-label">Categoría<small class="text-danger">*</small></label>
+                                        <select class="form-select" id="productCategory" required>
+                                            <option value="" disabled selected>Seleccione una categoría</option>
+                                            <option value="Tortas Cuadradas">Tortas Cuadradas</option>
+                                            <option value="Tortas Circulares">Tortas Circulares</option>
+                                            <option value="Postres Individuales">Postres Individuales</option>
+                                            <option value="Pasteleria Tradicional">Pasteleria Tradicional</option>
+                                            <option value="Productos Sin Azucar">Productos Sin Azucar</option>
+                                            <option value="Productos sin gluten">Productos sin gluten</option>
+                                            <option value="Productos Veganos">Productos Veganos</option>
+                                            <option value="Productos Especiales">Productos Especiales</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3 col-6 col-md-4">
+                                        <label for="productAvailability" class="form-label">Disponibilidad<small class="text-danger">*</small></label>
+                                        <select class="form-select" id="productAvailability" required>
+                                            <option value="Disponible">Disponible</option>
+                                            <option value="Agotado">Agotado</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+
+                                <div class="text-end">
+                                    <button type="submit" class="btn btn-primary" onclick="alert('Producto creado exitosamente')">Guardar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                         
                     </div>
                 </main>
